@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="flex items-center justify-between flex-wrap bg-red-700 p-6">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Video-Game-Controller-Icon.svg" alt="My Happy SVG"  width="32" height="32"/>
+      <span class="font-semibold text-xl tracking-tight">NES-store</span>
+    </div>
+    <div class="block lg:hidden">
+      <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      </button>
+    </div>
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div class="text-sm lg:flex-grow">
+        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white  hover:bg-amber-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Consoles <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+        <!-- Dropdown menu -->
+        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Super Nintendo</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Famicon</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Wii</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"></a>
+              </li>
+            </ul>
+        </div>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+          Accessories
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+          Games
+        </a>
+      </div>
+      <div>
+
+      </div>
+    </div>
+  </nav>
+
+  <section class="slider-wrapper">
+    <button class="slide-arrow" id="slide-arrow-prev">
+      &#8249;
+    </button>
+    <button class="slide-arrow" id="slide-arrow-next">
+      &#8250;
+    </button>
+    <ul class="slides-container" id="slides-container">
+      <li class="slide"></li>
+      <li class="slide"></li>
+      <li class="slide"></li>
+    </ul>
+  </section>
+
+  <div class="lower-container container">
+    <section class="stats">
+      <div class="flex">
+        <div class="stat">
+          <i class="fa fa-folder-open fa-2x" aria-hidden="true"></i>
+          <h3 class="title">Consoles from over 8 generations available</h3>
+          <p class="text">Get back into action with more recent consoles such as the Wii and Wii U or go back into the golden era of gaming with the Super Nintendo Entertainment System or the Gamecube and Nintendo 64 </p>
+        </div>
+        <div class="stat">
+          <i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i>
+          <h3 class="title">Play the best titles in Nintendo's history</h3>
+          <p class="text">From the Legend of Zelda Link to the Past to Super Mario Galaxy, all games from Nintendo's 25 year history are available in our store.</p>
+        </div>
+        <div class="stat">
+          <i class="fa fa-credit-card-alt fa-2x" aria-hidden="true"></i>
+          <h3 class="title">Get all the accessories you need</h3>
+          <p class="text">From Pro Controllers, IR blasters, Headpohones etc Get all the acccessories from our store today.</p>
+        </div>
+      </div>
+    </section>
+  
+  <footer>
+     <a href="xbox.com" target="_blank" rel="noopener">NES-store</a> 
+  </footer>
+  
+  
+  </section>
+
+
+
+    
+
+<script src="caro.js"></script>
+    
+</body>
+</html>
